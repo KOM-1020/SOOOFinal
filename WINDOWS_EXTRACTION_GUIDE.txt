@@ -1,0 +1,44 @@
+TCA Schedule Optimizer - Windows Extraction Instructions
+
+The .tar.gz file can be extracted using these methods:
+
+METHOD 1: Using 7-Zip (Recommended - FREE)
+1. Download and install 7-Zip: https://www.7-zip.org/
+2. Right-click the .tar.gz file
+3. Select "7-Zip" → "Extract Here"
+4. You'll get a folder ready for Databricks
+
+METHOD 2: Using WinRAR
+1. Right-click the .tar.gz file
+2. Select "Extract Here"
+3. Navigate to the extracted folder
+
+METHOD 3: Using Windows 10/11 Built-in
+1. Right-click the .tar.gz file
+2. Select "Extract All..."
+3. Choose destination and click "Extract"
+
+METHOD 4: Online Extraction (if others fail)
+1. Upload to: https://extract.me/ or https://unzip-online.com/
+2. Download the extracted files
+
+After extraction, you'll have a folder with all TCA Schedule Optimizer files.
+
+FOR DATABRICKS DEPLOYMENT:
+1. Log into your Databricks workspace
+2. Go to Workspace → Apps
+3. Click "Create App"
+4. Upload the extracted folder
+5. Set App Name: tca-schedule-optimizer
+6. Click "Deploy App"
+
+The app will be available at: https://your-workspace-url/apps/tca-schedule-optimizer
+
+WHAT'S INCLUDED:
+- Complete React frontend application
+- Express.js backend with APIs
+- All CSV data (183 customer records)
+- Interactive charts and maps
+- Ready-to-deploy configuration
+
+Your TCA Schedule Optimizer is ready for enterprise deployment!

@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: tca-schedule-optimizer
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        fromService:
+          type: web
+          name: tca-schedule-optimizer
+          property: port

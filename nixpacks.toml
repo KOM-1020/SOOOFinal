@@ -1,0 +1,15 @@
+[phases.setup]
+nixPkgs = ['nodejs_18']
+
+[phases.install]
+cmds = ['npm install --no-audit --no-fund']
+
+[phases.build]
+cmds = ['npm run build']
+
+[phases.start]
+cmd = 'npm start'
+
+[variables]
+NODE_ENV = 'production'
+PORT = '5000'
