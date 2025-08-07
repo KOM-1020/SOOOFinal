@@ -1,0 +1,36 @@
+Microsoft Windows [Version 10.0.19045.6093]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Hchan>cd C:\Users\Hchan\Downloads\node-v22.18.0-win-x64\node-v22.18.0-win-x64
+
+C:\Users\Hchan\Downloads\node-v22.18.0-win-x64\node-v22.18.0-win-x64>
+C:\Users\Hchan\Downloads\node-v22.18.0-win-x64\node-v22.18.0-win-x64>node --version
+v22.18.0
+
+C:\Users\Hchan\Downloads\node-v22.18.0-win-x64\node-v22.18.0-win-x64>npm --version
+10.9.3
+
+C:\Users\Hchan\Downloads\node-v22.18.0-win-x64\node-v22.18.0-win-x64>
+C:\Users\Hchan\Downloads\node-v22.18.0-win-x64\node-v22.18.0-win-x64>npm run setup
+npm error code ENOENT
+npm error syscall open
+npm error path C:\Users\Hchan\Downloads\node-v22.18.0-win-x64\node-v22.18.0-win-x64\package.json
+npm error errno -4058
+npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\Hchan\Downloads\node-v22.18.0-win-x64\node-v22.18.0-win-x64\package.json'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: C:\Users\Hchan\AppData\Local\npm-cache\_logs\2025-08-05T23_47_44_346Z-debug-0.log
+
+C:\Users\Hchan\Downloads\node-v22.18.0-win-x64\node-v22.18.0-win-x64>
+C:\Users\Hchan\Downloads\node-v22.18.0-win-x64\node-v22.18.0-win-x64>cd C:\Users\Hchan\OneDrive - BCI\Desktop\tca-schedule-optimizer-fixed
+
+C:\Users\Hchan\OneDrive - BCI\Desktop\tca-schedule-optimizer-fixed>set NODE_PATH=C:\Users\Hchan\Downloads\node-v22.18.0-win-x64\node-v22.18.0-win-x64
+
+C:\Users\Hchan\OneDrive - BCI\Desktop\tca-schedule-optimizer-fixed>%NODE_PATH%\npm install
+npm error code UNABLE_TO_GET_ISSUER_CERT_LOCALLY
+npm error errno UNABLE_TO_GET_ISSUER_CERT_LOCALLY
+npm error request to https://registry.npmjs.org/cors failed, reason: unable to get local issuer certificate
+npm error A complete log of this run can be found in: C:\Users\Hchan\AppData\Local\npm-cache\_logs\2025-08-05T23_51_12_385Z-debug-0.log
+
+C:\Users\Hchan\OneDrive - BCI\Desktop\tca-schedule-optimizer-fixed>
+C:\Users\Hchan\OneDrive - BCI\Desktop\tca-schedule-optimizer-fixed>

@@ -1,0 +1,241 @@
+
+Search logs...
+tca-schedule-optimizer
+[2025-08-05 21:40:51] [Databricks] [ERROR] [01f07244caa4134082f834b19d40d74d] Error deploying app: error building app: error during npm build: exit status 127
+[2025-08-05 21:40:51] [Databricks] [INFO] Deployment 01f07244caa4134082f834b19d40d74d ended in 11.329658535s
+sh: 1: vite: not found
+> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+> rest-express@1.0.0 build
+[2025-08-05 21:40:50] [Databricks] [INFO] Running build script vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+[2025-08-05 21:40:50] [Databricks] [INFO] Dependencies installed successfully.
+Run `npm audit` for details.
+npm audit fix
+To address all issues, run:
+3 low severity vulnerabilities
+run `npm fund` for details
+53 packages are looking for funding
+up to date, audited 377 packages in 831ms
+[2025-08-05 21:40:49] [Databricks] [INFO] Installing dependencies...
+[2025-08-05 21:40:49] [Databricks] [INFO] Updated file: python/source_code/client/src/components/charts/time-shift-chart.tsx
+[2025-08-05 21:40:49] [Databricks] [INFO] Updated file: python/source_code/client/src/components/charts/daily-slots-chart.tsx
+[2025-08-05 21:40:49] [Databricks] [INFO] Updated file: python/source_code/client/src/components/charts/travel-time-chart.tsx
+[2025-08-05 21:40:49] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/select.tsx
+[2025-08-05 21:40:49] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/navigation-menu.tsx
+[2025-08-05 21:40:49] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/aspect-ratio.tsx
+[2025-08-05 21:40:49] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/pagination.tsx
+[2025-08-05 21:40:49] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/tooltip.tsx
+[2025-08-05 21:40:49] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/progress.tsx
+[2025-08-05 21:40:48] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/alert-dialog.tsx
+[2025-08-05 21:40:48] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/label.tsx
+[2025-08-05 21:40:48] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/toggle-group.tsx
+[2025-08-05 21:40:48] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/alert.tsx
+[2025-08-05 21:40:48] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/toaster.tsx
+[2025-08-05 21:40:48] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/scroll-area.tsx
+[2025-08-05 21:40:48] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/table.tsx
+[2025-08-05 21:40:48] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/collapsible.tsx
+[2025-08-05 21:40:48] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/hover-card.tsx
+[2025-08-05 21:40:48] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/sheet.tsx
+[2025-08-05 21:40:48] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/accordion.tsx
+[2025-08-05 21:40:48] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/input-otp.tsx
+[2025-08-05 21:40:47] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/command.tsx
+[2025-08-05 21:40:47] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/context-menu.tsx
+[2025-08-05 21:40:47] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/dropdown-menu.tsx
+[2025-08-05 21:40:47] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/switch.tsx
+[2025-08-05 21:40:47] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/tabs.tsx
+[2025-08-05 21:40:47] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/menubar.tsx
+[2025-08-05 21:40:47] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/chart.tsx
+[2025-08-05 21:40:47] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/badge.tsx
+[2025-08-05 21:40:47] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/card.tsx
+[2025-08-05 21:40:47] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/carousel.tsx
+[2025-08-05 21:40:47] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/checkbox.tsx
+[2025-08-05 21:40:46] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/sidebar.tsx
+[2025-08-05 21:40:46] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/input.tsx
+[2025-08-05 21:40:46] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/toggle.tsx
+[2025-08-05 21:40:46] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/radio-group.tsx
+[2025-08-05 21:40:46] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/form.tsx
+[2025-08-05 21:40:46] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/slider.tsx
+[2025-08-05 21:40:46] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/skeleton.tsx
+[2025-08-05 21:40:46] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/drawer.tsx
+[2025-08-05 21:40:46] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/avatar.tsx
+[2025-08-05 21:40:46] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/button.tsx
+[2025-08-05 21:40:46] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/calendar.tsx
+[2025-08-05 21:40:45] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/textarea.tsx
+[2025-08-05 21:40:45] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/toast.tsx
+[2025-08-05 21:40:45] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/popover.tsx
+[2025-08-05 21:40:45] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/separator.tsx
+[2025-08-05 21:40:45] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/breadcrumb.tsx
+[2025-08-05 21:40:45] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/resizable.tsx
+[2025-08-05 21:40:45] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/dialog.tsx
+[2025-08-05 21:40:45] [Databricks] [INFO] Updated file: python/source_code/client/src/utils/team-colors.ts
+[2025-08-05 21:40:45] [Databricks] [INFO] Updated file: python/source_code/client/src/utils/address-normalizer.ts
+[2025-08-05 21:40:45] [Databricks] [INFO] Updated file: python/source_code/client/src/pages/dashboard.tsx
+[2025-08-05 21:40:44] [Databricks] [INFO] Updated file: python/source_code/client/src/pages/not-found.tsx
+[2025-08-05 21:40:44] [Databricks] [INFO] Updated file: python/source_code/client/src/lib/data-processor.ts
+[2025-08-05 21:40:44] [Databricks] [INFO] Updated file: python/source_code/client/src/lib/csv-parser.ts
+[2025-08-05 21:40:44] [Databricks] [INFO] Updated file: python/source_code/client/src/lib/queryClient.ts
+[2025-08-05 21:40:44] [Databricks] [INFO] Updated file: python/source_code/client/src/lib/utils.ts
+[2025-08-05 21:40:44] [Databricks] [INFO] Updated file: python/source_code/client/src/components/statistics-tab.tsx
+[2025-08-05 21:40:44] [Databricks] [INFO] Updated file: python/source_code/client/src/components/schedule-tab.tsx
+[2025-08-05 21:40:44] [Databricks] [INFO] Updated file: python/source_code/client/src/components/enhanced-travel-time-chart.tsx
+[2025-08-05 21:40:44] [Databricks] [INFO] Updated file: python/source_code/client/src/components/travel-time-comparison-chart.tsx
+[2025-08-05 21:40:44] [Databricks] [INFO] Updated file: python/source_code/client/src/components/all-teams-map-simple.tsx
+[2025-08-05 21:40:44] [Databricks] [INFO] Updated file: python/source_code/client/src/components/route-map.tsx
+[2025-08-05 21:40:43] [Databricks] [INFO] Updated file: python/source_code/client/src/components/individual-team-map.tsx
+[2025-08-05 21:40:43] [Databricks] [INFO] Updated file: python/source_code/client/src/components/team-detail-popup.tsx
+[2025-08-05 21:40:43] [Databricks] [INFO] Updated file: python/source_code/client/src/components/team-route-display.tsx
+[2025-08-05 21:40:43] [Databricks] [INFO] Updated file: python/source_code/client/src/components/simple-leaflet-map.tsx
+[2025-08-05 21:40:43] [Databricks] [INFO] Updated file: python/source_code/client/src/components/leaflet-map-simple.tsx
+[2025-08-05 21:40:43] [Databricks] [INFO] Updated file: python/source_code/client/src/components/all-teams-map.tsx
+[2025-08-05 21:40:43] [Databricks] [INFO] Updated file: python/source_code/client/src/components/map-wrapper.tsx
+[2025-08-05 21:40:43] [Databricks] [INFO] Updated file: python/source_code/client/src/components/stable-map-container.tsx
+[2025-08-05 21:40:43] [Databricks] [INFO] Updated file: python/source_code/client/src/components/leaflet-map.tsx
+[2025-08-05 21:40:43] [Databricks] [INFO] Updated file: python/source_code/client/src/components/leaflet-map-old.tsx
+[2025-08-05 21:40:43] [Databricks] [INFO] Updated file: python/source_code/client/src/components/schedule-calendar.tsx
+[2025-08-05 21:40:43] [Databricks] [INFO] Updated file: python/source_code/client/src/hooks/use-static-coordinates.ts
+[2025-08-05 21:40:42] [Databricks] [INFO] Updated file: python/source_code/client/src/hooks/use-global-preloader.ts
+[2025-08-05 21:40:42] [Databricks] [INFO] Updated file: python/source_code/client/src/hooks/use-preloaded-geocoding.ts
+[2025-08-05 21:40:42] [Databricks] [INFO] Updated file: python/source_code/client/src/hooks/use-toast.ts
+[2025-08-05 21:40:42] [Databricks] [INFO] Updated file: python/source_code/client/src/hooks/use-mobile.tsx
+[2025-08-05 21:40:42] [Databricks] [INFO] Updated file: python/source_code/client/src/index.css
+[2025-08-05 21:40:42] [Databricks] [INFO] Updated file: python/source_code/client/src/App.tsx
+[2025-08-05 21:40:42] [Databricks] [INFO] Updated file: python/source_code/client/src/main.tsx
+[2025-08-05 21:40:42] [Databricks] [INFO] Updated file: python/source_code/shared/schema.ts
+[2025-08-05 21:40:42] [Databricks] [INFO] Updated file: python/source_code/server/routes.ts
+[2025-08-05 21:40:42] [Databricks] [INFO] Updated file: python/source_code/server/storage.ts
+[2025-08-05 21:40:42] [Databricks] [INFO] Updated file: python/source_code/server/index.ts
+[2025-08-05 21:40:42] [Databricks] [INFO] Updated file: python/source_code/server/vite.ts
+[2025-08-05 21:40:41] [Databricks] [INFO] Updated file: python/source_code/client/index.html
+[2025-08-05 21:40:41] [Databricks] [INFO] Updated file: python/source_code/README_DATABRICKS.md
+[2025-08-05 21:40:41] [Databricks] [INFO] Updated file: python/source_code/DATABRICKS_DEPLOYMENT.md
+[2025-08-05 21:40:41] [Databricks] [INFO] Updated file: python/source_code/app.yaml
+[2025-08-05 21:40:41] [Databricks] [INFO] Updated file: python/source_code/components.json
+[2025-08-05 21:40:41] [Databricks] [INFO] Updated file: python/source_code/postcss.config.js
+[2025-08-05 21:40:41] [Databricks] [INFO] Updated file: python/source_code/tailwind.config.ts
+[2025-08-05 21:40:41] [Databricks] [INFO] Updated file: python/source_code/vite.config.ts
+[2025-08-05 21:40:41] [Databricks] [INFO] Updated file: python/source_code/tsconfig.json
+[2025-08-05 21:40:41] [Databricks] [INFO] Updated file: python/source_code/package-lock.json
+[2025-08-05 21:40:40] [Databricks] [INFO] Updated file: python/source_code/package.json
+[2025-08-05 21:40:39] [Databricks] [INFO] Downloading source code from /Workspace/Users/c5f02183-5bd7-4420-b0e0-de1659a4261b/src/01f07244caa4134082f834b19d40d74d
+[2025-08-05 21:40:39] [Databricks] [INFO] Starting deployment 01f07244caa4134082f834b19d40d74d...
+[2025-08-05 21:38:22] [Databricks] [ERROR] [01f072446b9519b184776128456e7e45] Error deploying app: error building app: error during npm build: exit status 127
+[2025-08-05 21:38:22] [Databricks] [INFO] Deployment 01f072446b9519b184776128456e7e45 ended in 17.012724526s
+sh: 1: vite: not found
+> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+> rest-express@1.0.0 build
+[2025-08-05 21:38:22] [Databricks] [INFO] Running build script vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+[2025-08-05 21:38:22] [Databricks] [INFO] Dependencies installed successfully.
+npm notice
+npm notice To update run: npm install -g npm@11.5.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.5.2
+npm notice New major version of npm available! 10.9.2 -> 11.5.2
+npm notice
+Run `npm audit` for details.
+npm audit fix
+To address all issues, run:
+3 low severity vulnerabilities
+run `npm fund` for details
+53 packages are looking for funding
+added 376 packages, and audited 377 packages in 6s
+[2025-08-05 21:38:16] [Databricks] [INFO] Installing dependencies...
+[2025-08-05 21:38:16] [Databricks] [INFO] Updated file: python/source_code/client/src/components/charts/time-shift-chart.tsx
+[2025-08-05 21:38:16] [Databricks] [INFO] Updated file: python/source_code/client/src/components/charts/daily-slots-chart.tsx
+[2025-08-05 21:38:16] [Databricks] [INFO] Updated file: python/source_code/client/src/components/charts/travel-time-chart.tsx
+[2025-08-05 21:38:16] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/select.tsx
+[2025-08-05 21:38:16] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/navigation-menu.tsx
+[2025-08-05 21:38:16] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/aspect-ratio.tsx
+[2025-08-05 21:38:15] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/pagination.tsx
+[2025-08-05 21:38:15] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/tooltip.tsx
+[2025-08-05 21:38:15] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/progress.tsx
+[2025-08-05 21:38:15] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/alert-dialog.tsx
+[2025-08-05 21:38:15] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/label.tsx
+[2025-08-05 21:38:15] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/toggle-group.tsx
+[2025-08-05 21:38:15] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/alert.tsx
+[2025-08-05 21:38:15] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/toaster.tsx
+[2025-08-05 21:38:15] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/scroll-area.tsx
+[2025-08-05 21:38:15] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/table.tsx
+[2025-08-05 21:38:15] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/collapsible.tsx
+[2025-08-05 21:38:14] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/hover-card.tsx
+[2025-08-05 21:38:14] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/sheet.tsx
+[2025-08-05 21:38:14] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/accordion.tsx
+[2025-08-05 21:38:14] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/input-otp.tsx
+[2025-08-05 21:38:14] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/command.tsx
+[2025-08-05 21:38:14] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/context-menu.tsx
+[2025-08-05 21:38:14] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/dropdown-menu.tsx
+[2025-08-05 21:38:14] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/switch.tsx
+[2025-08-05 21:38:14] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/tabs.tsx
+[2025-08-05 21:38:14] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/menubar.tsx
+[2025-08-05 21:38:14] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/chart.tsx
+[2025-08-05 21:38:14] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/badge.tsx
+[2025-08-05 21:38:13] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/card.tsx
+[2025-08-05 21:38:13] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/carousel.tsx
+[2025-08-05 21:38:13] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/checkbox.tsx
+[2025-08-05 21:38:13] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/sidebar.tsx
+[2025-08-05 21:38:13] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/input.tsx
+[2025-08-05 21:38:13] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/toggle.tsx
+[2025-08-05 21:38:13] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/radio-group.tsx
+[2025-08-05 21:38:13] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/form.tsx
+[2025-08-05 21:38:13] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/slider.tsx
+[2025-08-05 21:38:13] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/skeleton.tsx
+[2025-08-05 21:38:13] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/drawer.tsx
+[2025-08-05 21:38:12] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/avatar.tsx
+[2025-08-05 21:38:12] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/button.tsx
+[2025-08-05 21:38:12] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/calendar.tsx
+[2025-08-05 21:38:12] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/textarea.tsx
+[2025-08-05 21:38:12] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/toast.tsx
+[2025-08-05 21:38:12] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/popover.tsx
+[2025-08-05 21:38:12] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/separator.tsx
+[2025-08-05 21:38:12] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/breadcrumb.tsx
+[2025-08-05 21:38:12] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/resizable.tsx
+[2025-08-05 21:38:12] [Databricks] [INFO] Updated file: python/source_code/client/src/components/ui/dialog.tsx
+[2025-08-05 21:38:11] [Databricks] [INFO] Updated file: python/source_code/client/src/utils/team-colors.ts
+[2025-08-05 21:38:11] [Databricks] [INFO] Updated file: python/source_code/client/src/utils/address-normalizer.ts
+[2025-08-05 21:38:11] [Databricks] [INFO] Updated file: python/source_code/client/src/pages/dashboard.tsx
+[2025-08-05 21:38:11] [Databricks] [INFO] Updated file: python/source_code/client/src/pages/not-found.tsx
+[2025-08-05 21:38:11] [Databricks] [INFO] Updated file: python/source_code/client/src/lib/data-processor.ts
+[2025-08-05 21:38:11] [Databricks] [INFO] Updated file: python/source_code/client/src/lib/csv-parser.ts
+[2025-08-05 21:38:11] [Databricks] [INFO] Updated file: python/source_code/client/src/lib/queryClient.ts
+[2025-08-05 21:38:11] [Databricks] [INFO] Updated file: python/source_code/client/src/lib/utils.ts
+[2025-08-05 21:38:11] [Databricks] [INFO] Updated file: python/source_code/client/src/components/statistics-tab.tsx
+[2025-08-05 21:38:11] [Databricks] [INFO] Updated file: python/source_code/client/src/components/schedule-tab.tsx
+[2025-08-05 21:38:11] [Databricks] [INFO] Updated file: python/source_code/client/src/components/enhanced-travel-time-chart.tsx
+[2025-08-05 21:38:10] [Databricks] [INFO] Updated file: python/source_code/client/src/components/travel-time-comparison-chart.tsx
+[2025-08-05 21:38:10] [Databricks] [INFO] Updated file: python/source_code/client/src/components/all-teams-map-simple.tsx
+[2025-08-05 21:38:10] [Databricks] [INFO] Updated file: python/source_code/client/src/components/route-map.tsx
+[2025-08-05 21:38:10] [Databricks] [INFO] Updated file: python/source_code/client/src/components/individual-team-map.tsx
+[2025-08-05 21:38:10] [Databricks] [INFO] Updated file: python/source_code/client/src/components/team-detail-popup.tsx
+[2025-08-05 21:38:10] [Databricks] [INFO] Updated file: python/source_code/client/src/components/team-route-display.tsx
+[2025-08-05 21:38:10] [Databricks] [INFO] Updated file: python/source_code/client/src/components/simple-leaflet-map.tsx
+[2025-08-05 21:38:10] [Databricks] [INFO] Updated file: python/source_code/client/src/components/leaflet-map-simple.tsx
+[2025-08-05 21:38:10] [Databricks] [INFO] Updated file: python/source_code/client/src/components/all-teams-map.tsx
+[2025-08-05 21:38:10] [Databricks] [INFO] Updated file: python/source_code/client/src/components/map-wrapper.tsx
+[2025-08-05 21:38:10] [Databricks] [INFO] Updated file: python/source_code/client/src/components/stable-map-container.tsx
+[2025-08-05 21:38:09] [Databricks] [INFO] Updated file: python/source_code/client/src/components/leaflet-map.tsx
+[2025-08-05 21:38:09] [Databricks] [INFO] Updated file: python/source_code/client/src/components/leaflet-map-old.tsx
+[2025-08-05 21:38:09] [Databricks] [INFO] Updated file: python/source_code/client/src/components/schedule-calendar.tsx
+[2025-08-05 21:38:09] [Databricks] [INFO] Updated file: python/source_code/client/src/hooks/use-static-coordinates.ts
+[2025-08-05 21:38:09] [Databricks] [INFO] Updated file: python/source_code/client/src/hooks/use-global-preloader.ts
+[2025-08-05 21:38:09] [Databricks] [INFO] Updated file: python/source_code/client/src/hooks/use-preloaded-geocoding.ts
+[2025-08-05 21:38:09] [Databricks] [INFO] Updated file: python/source_code/client/src/hooks/use-toast.ts
+[2025-08-05 21:38:09] [Databricks] [INFO] Updated file: python/source_code/client/src/hooks/use-mobile.tsx
+[2025-08-05 21:38:09] [Databricks] [INFO] Updated file: python/source_code/client/src/index.css
+[2025-08-05 21:38:09] [Databricks] [INFO] Updated file: python/source_code/client/src/App.tsx
+[2025-08-05 21:38:08] [Databricks] [INFO] Updated file: python/source_code/client/src/main.tsx
+[2025-08-05 21:38:08] [Databricks] [INFO] Updated file: python/source_code/shared/schema.ts
+[2025-08-05 21:38:08] [Databricks] [INFO] Updated file: python/source_code/server/routes.ts
+[2025-08-05 21:38:08] [Databricks] [INFO] Updated file: python/source_code/server/storage.ts
+[2025-08-05 21:38:08] [Databricks] [INFO] Updated file: python/source_code/server/index.ts
+[2025-08-05 21:38:08] [Databricks] [INFO] Updated file: python/source_code/server/vite.ts
+[2025-08-05 21:38:08] [Databricks] [INFO] Updated file: python/source_code/client/index.html
+[2025-08-05 21:38:08] [Databricks] [INFO] Updated file: python/source_code/README_DATABRICKS.md
+[2025-08-05 21:38:08] [Databricks] [INFO] Updated file: python/source_code/DATABRICKS_DEPLOYMENT.md
+[2025-08-05 21:38:08] [Databricks] [INFO] Updated file: python/source_code/app.yaml
+[2025-08-05 21:38:07] [Databricks] [INFO] Updated file: python/source_code/components.json
+[2025-08-05 21:38:07] [Databricks] [INFO] Updated file: python/source_code/postcss.config.js
+[2025-08-05 21:38:07] [Databricks] [INFO] Updated file: python/source_code/tailwind.config.ts
+[2025-08-05 21:38:07] [Databricks] [INFO] Updated file: python/source_code/vite.config.ts
+[2025-08-05 21:38:07] [Databricks] [INFO] Updated file: python/source_code/tsconfig.json
+[2025-08-05 21:38:07] [Databricks] [INFO] Updated file: python/source_code/package-lock.json
+[2025-08-05 21:38:07] [Databricks] [INFO] Updated file: python/source_code/package.json
+[2025-08-05 21:38:05] [Databricks] [INFO] Downloading source code from /Workspace/Users/c5f02183-5bd7-4420-b0e0-de1659a4261b/src/01f072446b9519b184776128456e7e45
+[2025-08-05 21:38:05] [Databricks] [INFO] Starting deployment 01f072446b9519b184776128456e7e45...
+[2025-08-05 21:36:45] [Databricks] [INFO] Starting Databricks Apps runtime...

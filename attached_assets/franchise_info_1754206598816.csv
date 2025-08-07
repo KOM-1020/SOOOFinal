@@ -1,0 +1,2 @@
+FranchiseId,FranchiseName,TimeZoneOffset,Address1,City,State,PostalCode,IsCalculatedTravelTimeAllowed,TravelBetweenHouses,IsRealTravelTimeUsed,LoadUnloadMinutes,StartingTime,EstimatedCleanTime,DaySchedMaxSlots,ExtraTimeA,ExtraTimeAJobTicket,ExtraTimeB,ExtraTimeBJobTicket,AdditionalWorkTimeReporting,AverageCleanPrice,AverageLaborRate,LocalTaxResidential,LocalTaxCommercial
+372,Mount Prospect,-1,350 W Kensington Rd #105,Mount Prospect,IL,60056,1,20,0,10,30:00.0,0.814400017261505,14,1.75,1.5,1.5,1.5,1.0,191.549606323242,19.4540996551514,0.0,0.0

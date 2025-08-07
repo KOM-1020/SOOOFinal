@@ -1,0 +1,184 @@
+day_name,team_number,start_time,end_time,service_duration_minutes,customer_address,customer_city,travel_time_minutes,CustomerId
+friday,1,08:40,10:45,125,100 Marberry Dr,Prospect Heights,0,5406009
+friday,1,10:53,11:46,53,1403 Plum Ct,Mount Prospect,8,4297491
+friday,1,11:54,13:23,89,1136 N Derbyshire Dr,Arlington Heights,8,4802084
+friday,1,13:29,16:09,160,1430 N Hickory Ave,Arlington Heights,6,3383444
+friday,2,08:40,09:45,65,1005 N Greenfield Ln,Mount Prospect,0,5415351
+friday,2,09:55,11:32,97,1321 Middleton Ct,Des Plaines,10,3107761
+friday,2,11:40,12:51,71,745 Marcella Rd,Des Plaines,8,4046095
+friday,2,13:07,15:16,129,516 Anita St,Des Plaines,16,3427643
+friday,2,15:24,17:15,111,467 W Dempster St,Des Plaines,8,3875935
+friday,3,08:50,10:01,71,2150 N Coldspring Rd,Arlington Heights,0,3827621
+friday,3,10:02,11:48,106,2110 N Coldspring Rd,Arlington Heights,1,5403495
+friday,3,11:52,13:08,76,2182 N LAKE SHORE CIR,Arlington Heights,4,4981166
+friday,3,13:26,14:36,70,939 Valley Stream Dr,Wheeling,18,5241658
+friday,3,14:43,15:35,52,375 W Dundee Rd Apt429,Wheeling,7,4596691
+friday,3,15:40,16:36,56,223 N wolf rd,Wheeling,5,4230153
+friday,5,08:57,10:06,69,707 E Falcon Dr Unit 210,Arlington Heights,0,4003253
+friday,5,10:28,11:25,57,841 Delphia,Elk Grove Village,22,3886162
+friday,5,11:51,12:41,50,1497 Kathleen Way,Elk Grove Village,26,3913694
+friday,5,12:56,14:27,91,1222 Bridgeport Dr,Schaumburg,15,3886160
+friday,5,14:43,15:38,55,218 Deerpath Ct Unit A1,Schaumburg,16,3033721
+friday,5,15:41,16:57,76,1545 Stevens Dr,Schaumburg,3,3363248
+friday,7,09:09,10:53,104,282 Saddle Ct,Buffalo Grove,0,2452220
+friday,7,10:57,12:21,84,77 Woodstone Dr,Buffalo Grove,4,3416884
+friday,7,12:26,13:53,87,424 Hazelwood Ter,Buffalo Grove,5,5362530
+friday,7,14:02,15:52,110,184 Morningside Ln W,Buffalo Grove,9,4087620
+friday,7,15:55,17:15,80,1304 Hidden Lake Dr,Buffalo Grove,3,3107772
+friday,8,09:16,10:37,81,3133 Hemlock Ln,Northbrook,0,5387169
+friday,8,10:42,12:42,120,1696 Highland Ave,Northbrook,5,4468999
+friday,8,12:53,14:28,95,2859 Shannon Ct,Northbrook,11,5271787
+friday,8,14:33,15:43,70,2445 Cherry Ln,Northbrook,5,5411225
+friday,9,09:21,10:57,96,990 Indian Spring Ln,Buffalo Grove,0,4392554
+friday,9,11:04,12:52,108,1409 Oxford Dr,Buffalo Grove,7,4558757
+friday,9,13:31,14:39,68,143 E Heatherlea Dr,Palatine,39,4635474
+friday,9,15:37,16:51,74,1310 Mayfield Ln,Hoffman Estates,58,3575093
+friday,10,09:47,11:03,76,1809 Cottington Dr,Schaumburg,0,2452288
+friday,10,11:13,12:13,60,101 S Braintree Dr,Schaumburg,10,5201805
+friday,10,12:16,13:04,48,2218 W Weathersfield Way,Schaumburg,3,2452455
+monday,1,08:33,10:36,123,518 N Fairview Ave,Mount Prospect,0,5382151
+monday,1,10:37,13:09,152,502 N Prospect Manor Ave,Mount Prospect,1,5247804
+monday,1,13:12,14:26,74,305 N Fairview Ave,Mount Prospect,3,4911617
+monday,1,14:37,15:44,67,310 S Edward St,Mount Prospect,11,4651894
+monday,1,15:49,16:45,56,441 pinehurst dr,Des Plaines,5,4629960
+monday,1,16:51,17:51,60,640 E Golf rd,Des Plaines,6,5089024
+monday,3,08:45,09:49,64,504 N MAPLE ST,Prospect Heights,0,4864176
+monday,3,09:55,11:06,71,300 Inwood Dr Apt416,Wheeling,6,5370841
+monday,3,11:12,12:25,73,1425 Sandpebble Dr Unit 343,Wheeling,6,5378998
+monday,3,12:32,13:32,60,13 Glenbrook Dr,Prospect Heights,7,5425364
+monday,3,13:44,14:41,57,1526 Chippewa Trl,Wheeling,12,4495042
+monday,3,14:47,16:20,93,1509 E Best Dr,Arlington Heights,6,3828771
+monday,3,16:25,17:13,48,3125 Walker Ln W,Arlington Heights,5,4962891
+monday,4,08:52,10:20,88,1004 N Arlington Heights rd,Arlington Heights,0,5242456
+monday,4,10:32,12:42,130,1563 E Olive St,Palatine,12,4720736
+monday,4,12:56,13:56,60,132 N Forest Ave,Palatine,14,4838651
+monday,4,14:03,14:55,52,646 S Bennett Ave,Palatine,7,2452306
+monday,4,15:00,15:25,25,5 W Comfort St,Palatine,5,2452420
+monday,4,15:35,17:00,85,139 s maple Ct,Palatine,10,4982740
+monday,6,09:00,10:06,66,1912 N Dunhill Ct,Arlington Heights,0,2452408
+monday,6,10:19,11:55,96,1703 Shirra Ct,Arlington Heights,13,4434078
+monday,6,12:07,13:41,94,1311 E Kenilworth Ave,Palatine,12,3499843
+monday,6,13:56,15:00,64,1144 N Ventura Dr,Palatine,15,2452274
+monday,6,15:02,17:07,125,473 E Balsam Ln,Palatine,2,5370029
+monday,7,09:14,10:34,80,2304 GREENWOOD RD,Glenview Nas,0,5435464
+monday,7,10:43,11:48,65,3055 LEXINGTON LN,Glenview Nas,9,4904844
+monday,7,11:49,12:49,60,3083 Lexington Ln,Glenview Nas,1,3107755
+monday,7,13:03,13:44,41,3 Ct of Harborside Apt211,Northbrook,14,5395940
+monday,7,13:49,15:11,82,1560 Elm Ave,Northbrook,5,3587810
+monday,7,15:15,16:40,85,1581 SUZANN TER,Northbrook,4,4379186
+monday,9,09:23,10:32,69,7616 N Olcott,Niles,0,5092470
+monday,9,10:47,12:17,90,201 Glenlake Ave,Park Ridge,15,5286404
+monday,9,12:22,13:53,91,1528 S Prospect Ave,Park Ridge,5,3532089
+monday,9,14:28,16:29,121,6514 N Kilbourn Ave,Lincolnwood,35,5325557
+monday,10,09:58,10:32,34,165 Sierra Pass Dr,Schaumburg,0,2452203
+monday,10,10:47,11:37,50,804 S Oltendorf Rd,Streamwood,15,3160653
+monday,10,11:57,13:11,74,713 Verandah Dr,Hanover Park,20,3107853
+thursday,1,08:37,10:18,101,425 W Bob O Link Rd,Mount Prospect,0,5290899
+thursday,1,10:19,11:27,68,620 W Bunting Ln,Mount Prospect,1,5239199
+thursday,1,11:31,13:01,90,113 N Regency Dr E,Arlington Heights,4,4213849
+thursday,1,13:13,14:56,103,407 N Brighton Pl,Arlington Heights,12,5005210
+thursday,1,15:03,16:24,81,201 W Euclid ave,Arlington Heights,7,4578637
+thursday,1,16:29,17:39,70,1300 W Euclid Ave,Arlington Heights,5,5123017
+thursday,3,08:42,09:44,62,611 S School St,Mount Prospect,0,5350140
+thursday,3,09:50,11:40,110,304 W Lonnquist Blvd,Mount Prospect,6,4304740
+thursday,3,11:51,13:10,79,291 W KATHLEEN DR,Des Plaines,11,4509964
+thursday,3,13:15,14:14,59,525 Ambleside Rd,Des Plaines,5,3107812
+thursday,3,14:22,15:16,54,1091 Clark Ln,Des Plaines,8,3107823
+thursday,3,15:22,16:25,63,64 W Jeffery Ln,Des Plaines,6,3651399
+thursday,3,16:33,17:48,75,366 S Mt Prospect Rd,Des Plaines,8,4365184
+thursday,4,08:52,10:32,100,19 N Kaspar Ave,Arlington Heights,0,3276820
+thursday,4,10:39,12:00,81,513 S Reuter Dr,Arlington Heights,7,2452219
+thursday,4,12:09,13:36,87,1107 S Fernandez Ave,Arlington Heights,9,2452215
+thursday,4,13:46,14:46,60,3909 EAGLE LN,Rolling Meadows,10,5331289
+thursday,4,14:51,16:56,125,3309 Central Rd,Rolling Meadows,5,5115847
+thursday,5,09:00,10:47,107,905 W Essex Pl,Arlington Heights,0,5069945
+thursday,5,10:50,11:53,63,2722 N Harvard Ave,Arlington Heights,3,5237805
+thursday,5,11:58,15:16,198,2574 N Ridge Ave,Arlington Heights,5,4365570
+thursday,5,15:33,16:50,77,664 Patton Dr,Buffalo Grove,17,3537975
+thursday,6,09:09,10:08,59,2757 KAREN LN,Glenview,0,4567047
+thursday,6,10:12,11:34,82,2562 Bel Air Dr,Glenview,4,5128129
+thursday,6,11:41,12:39,58,9412 Ozark,Morton Grove,7,5106372
+thursday,6,12:42,13:51,69,9427 MERRILL AVE,Morton Grove,3,3933959
+thursday,6,14:05,15:37,92,535 Hazelwood Ln,Glenview,14,5440742
+thursday,7,09:16,10:42,86,29 Morris St,Park Ridge,0,4685686
+thursday,7,10:48,13:35,167,620 Vine Ave,Park Ridge,6,3107767
+thursday,7,13:40,15:10,90,604 S Greenwood,Park Ridge,5,4149008
+thursday,7,15:16,16:43,87,1001 Bonita Dr,Park Ridge,6,5242168
+thursday,8,09:27,11:07,100,8660 Narragansett,Morton Grove,0,4536546
+thursday,8,11:10,12:23,73,8541 Fernald Ave,Morton Grove,3,5283099
+thursday,8,12:26,14:10,104,8609 AUSTIN AVE,Morton Grove,3,4631933
+thursday,8,14:15,14:40,25,5506 Lincoln Apt521,Morton Grove,5,5419006
+thursday,8,14:41,15:52,71,5524 Main St,Morton Grove,1,5392446
+thursday,8,15:56,17:09,73,8611 Laramie Ave,Skokie,4,5278211
+tuesday,1,08:34,09:09,35,513 E Highland Ave,Mount Prospect,0,5164519
+tuesday,1,09:15,10:42,87,616 w oriole ln,Mount Prospect,6,5108927
+tuesday,1,10:43,11:48,65,616 Larkdale Ln,Mount Prospect,1,5360046
+tuesday,1,11:57,13:48,111,50 S Brighton Pl,Arlington Heights,9,4745505
+tuesday,1,13:49,14:54,65,1107 E Mayfair Rd,Arlington Heights,1,5168376
+tuesday,1,14:58,16:00,62,203 N LINCOLN LN,Arlington Heights,4,4321556
+tuesday,1,16:05,18:06,121,1515 W Suffield Ct,Arlington Heights,5,2452305
+tuesday,2,08:46,10:17,91,844 S Cleveland Ave,Arlington Heights,0,4192937
+tuesday,2,10:18,11:50,92,903 S Cleveland Ave,Arlington Heights,1,5350183
+tuesday,2,11:59,13:43,104,2740 e woodbury,Arlington Heights,9,5274142
+tuesday,2,13:48,16:32,164,115 S KASPAR AVE,Arlington Heights,5,5338898
+tuesday,2,16:33,17:42,69,811 W George St,Arlington Heights,1,5269028
+tuesday,3,08:51,11:08,137,1714 N Dover Ln,Arlington Heights,0,2452453
+tuesday,3,11:10,12:28,78,2002 E Lillian Ln,Arlington Heights,2,2452344
+tuesday,3,12:37,14:03,86,1305 E Brookwood Dr,Arlington Heights,9,5023691
+tuesday,3,14:11,15:32,81,510 E Burr Oak Dr,Arlington Heights,8,2452262
+tuesday,3,15:36,17:18,102,414 W Burr oak Dr,Arlington Heights,4,5333278
+tuesday,4,08:58,10:21,83,924 Margret St,Des Plaines,0,5183910
+tuesday,4,10:41,12:44,123,531 Sylviawood Ave,Park Ridge,20,3107802
+tuesday,4,12:51,14:31,100,1522 W Talcott Rd,Park Ridge,7,3107835
+tuesday,4,14:35,17:03,148,500 S Home Ave,Park Ridge,4,5426928
+tuesday,5,09:06,10:27,81,221 s park Pl dr,Bartlett,0,3886169
+tuesday,5,11:23,13:39,136,36W792 Whispering Trl,Saint Charles,56,3886137
+tuesday,5,13:39,14:59,80,41w067 Colson Dr,Saint Charles,0,3886134
+tuesday,7,09:10,10:14,64,222 W BRYANT AVE,Palatine,0,4981873
+tuesday,7,10:26,11:53,87,12 Rumford on Asbury,Rolling Meadows,12,5264070
+tuesday,7,12:04,14:30,146,304 Park Dr,Palatine,11,4994284
+tuesday,7,14:54,16:40,106,3560 Londonderry Ct,Palatine,24,5403488
+tuesday,8,09:17,11:41,144,1109 Lincoln St,Glenview,0,4747429
+tuesday,8,11:51,15:21,210,339 N branch Rd,Glenview,10,5445964
+tuesday,9,09:27,11:42,135,1301 WOODLAWN AVE,Glenview,0,5276656
+tuesday,9,11:43,14:02,139,1619 Sunset Ridge Rd,Glenview,1,5200818
+tuesday,9,14:09,16:30,141,1042 Pleasant Ln,Glenview,7,4673494
+tuesday,11,09:33,10:50,77,9320 Luna Ave,Morton Grove,0,5021503
+tuesday,11,12:53,13:55,62,437 Sycamore Ave,Roselle,123,3538116
+tuesday,11,14:13,15:26,73,70 Rosewood Dr,Roselle,18,3219041
+wednesday,1,08:35,09:15,40,811 S Na Wa Ta,Mount Prospect,0,4430547
+wednesday,1,09:21,11:28,127,901 S Hi Lusi Ave,Mount Prospect,6,3439260
+wednesday,1,11:31,12:42,71,411 S Na Wa Ta Ave,Mount Prospect,3,3107894
+wednesday,1,12:45,13:47,62,1201 W Lincoln St,Mount Prospect,3,3236877
+wednesday,1,13:50,15:26,96,901 W Milburn Ave,Mount Prospect,3,5413588
+wednesday,1,15:33,16:30,57,918 S See Gwun Ave,Mount Prospect,7,5277289
+wednesday,1,16:35,17:31,56,911 S I Oka Ave,Mount Prospect,5,5229909
+wednesday,2,08:48,09:46,58,806 bonnie brook dr,Prospect Heights,0,4872303
+wednesday,2,09:55,10:56,61,1801 E MAYA LN,Mount Prospect,9,5273423
+wednesday,2,11:12,13:21,129,1502 Magnolia St,Glenview,16,4254068
+wednesday,2,13:27,14:43,76,4401 Lainie Cir,Glenview Nas,6,5220157
+wednesday,2,14:58,16:22,84,1330 Huber Ln,Glenview Nas,15,3317955
+wednesday,3,08:51,10:17,86,602 E Clarendon,Arlington Heights,0,4832848
+wednesday,3,10:22,11:47,85,1305 N Dunton Ave,Arlington Heights,5,4425162
+wednesday,3,11:50,13:50,120,1535 N Vail Ave,Arlington Heights,3,2452229
+wednesday,3,13:56,15:33,97,1306 N Salem Blvd,Arlington Heights,6,3480096
+wednesday,3,15:39,16:41,62,430 S Warren,Palatine,6,5137795
+wednesday,4,08:55,10:17,82,10109 Potter Rd,Des Plaines,0,3107762
+wednesday,4,10:23,12:14,111,2070 Busse Hwy,Des Plaines,6,3452736
+wednesday,4,12:23,14:10,107,2220 Walnut,Park Ridge,9,5319945
+wednesday,4,14:15,17:03,168,842 N NW Hwy,Park Ridge,5,4563359
+wednesday,5,09:07,10:53,106,1258 Highland Ln,Glenview,0,4997781
+wednesday,5,11:04,13:31,147,1497 Midway Ln,Glenview Nas,11,4460107
+wednesday,5,13:42,15:58,136,2410 Fir St,Glenview,11,3579935
+wednesday,7,09:13,11:14,121,130 Stonegate Rd,Buffalo Grove,0,4560214
+wednesday,7,11:28,13:20,112,4 Wakefield Ct,Buffalo Grove,14,3107849
+wednesday,7,13:26,16:01,155,821 Horatio blvd,Buffalo Grove,6,3526566
+wednesday,9,09:19,11:55,156,888 W Dorchester,Palatine,0,4725418
+wednesday,9,12:01,13:24,83,1343 W Hampton Pl,Palatine,6,5132518
+wednesday,9,13:38,14:49,71,1061 W Myrtle St,Palatine,14,4557319
+wednesday,9,15:30,16:17,47,570 Edgemont Ln,Hoffman Estates,41,2948733
+wednesday,9,16:23,17:22,59,927 Canterbury Dr,Schaumburg,6,2452190
+wednesday,10,09:29,10:12,43,2220 founders dr Apt118,Northbrook,0,4032597
+wednesday,10,10:25,11:48,83,1326 LARRABEE LN,Northbrook,13,4928679
+wednesday,10,12:03,13:43,100,2587 Fairford Ln,Northbrook,15,5249995
+wednesday,10,15:51,17:17,86,12 Hinkle Ln,Schaumburg,128,2501821

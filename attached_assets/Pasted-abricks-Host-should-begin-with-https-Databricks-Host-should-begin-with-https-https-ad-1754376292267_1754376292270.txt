@@ -1,0 +1,46 @@
+abricks Host (should begin with https://):
+Databricks Host (should begin with https://): https://adb-1761712055023179.19.azuredatabricks.net
+Token:
+
+C:\Users\HChan>s
+'s' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\HChan>
+C:\Users\HChan>python -m databricks_cli.cli configure --token
+Databricks Host (should begin with https://): https://adb-1761712055023179.19.azuredatabricks.net
+Token:
+
+C:\Users\HChan>python -m databricks_cli.cli configure --token
+Databricks Host (should begin with https://): https://adb-1761712055023179.19.azuredatabricks.net
+Token:
+
+C:\Users\HChan>python -m databricks_cli.cli configure --token
+Databricks Host (should begin with https://): https://adb-1761712055023179.19.azuredatabricks.net
+Token:
+
+C:\Users\HChan>python -m databricks_cli.cli configure --token
+Databricks Host (should begin with https://): python -m databricks_cli.cli configure --token
+Error: The host does not start with https://
+Databricks Host (should begin with https://): python -m databricks_cli.cli workspace export_dir "C:\Users\Hchan\OneDrive - BCI\Desktop\tca-schedule-optimizer-databricks-ready" "/Workspace/Users/harvey.chan@bci.ca/TCA" --format SOURCE
+Error: The host does not start with https://
+Databricks Host (should begin with https://):
+Databricks Host (should begin with https://): https://adb-1761712055023179.19.azuredatabricks.net
+Token:
+
+C:\Users\HChan>python -m databricks_cli.cli workspace export_dir "C:\Users\Hchan\OneDrive - BCI\Desktop\tca-schedule-optimizer-databricks-ready" "/Workspace/Users/harvey.chan@bci.ca/TCA" --format SOURCE
+Usage: python -m databricks_cli.cli workspace export_dir [OPTIONS] SOURCE_PATH
+                                                         TARGET_PATH
+Try 'python -m databricks_cli.cli workspace export_dir -h' for help.
+
+Error: No such option: --format
+
+Warning: The version of the CLI you are using is deprecated.
+To migrate to the new CLI, see https://docs.databricks.com/dev-tools/cli/migrate.html.
+
+In the new CLI, commands and flags might be different.
+The preceding migration guide provides guidance about how to adapt your commands accordingly.
+
+
+C:\Users\HChan>
+C:\Users\HChan>

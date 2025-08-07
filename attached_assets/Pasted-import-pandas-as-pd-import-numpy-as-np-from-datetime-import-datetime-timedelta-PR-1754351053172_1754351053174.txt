@@ -1,0 +1,341 @@
+import pandas as pd
+import numpy as np
+from datetime import datetime, timedelta
+
+# ========== PROCESS ORIGINAL DATASET ==========
+original = pd.read_csv("/Workspace/Users/harvey.chan@bci.ca/TCA Opt/Input/Clean_FranchiseId_372_with_Address_Duration.csv")
+
+# Convert CleanDate to datetime format and filter for July 7-13, 2025
+original['CleanDate'] = pd.to_datetime(original['CleanDate'])
+start_date = datetime(2025, 7, 7)
+end_date = datetime(2025, 7, 13)
+original = original[(original['CleanDate'] >= start_date) & (original['CleanDate'] <= end_date)]
+
+# Add day_name column based on CleanDate
+original['day_name'] = original['CleanDate'].dt.day_name().str.lower()
+
+original['start_datetime'] = pd.to_datetime(original['TimeIn'])
+original['end_datetime'] = pd.to_datetime(original['TimeOut'])
+
+# Sort by CleanDate, TeamNumber, and start_time
+original = original.sort_values(['CleanDate', 'TeamNumber', 'start_datetime'])
+
+# Initialize travel_time column
+original['travel_time_minutes'] = np.nan
+original_negative_travel_times = 0
+
+# Calculate travel time for each CleanDate and TeamNumber group
+for (date, team), group in original.groupby(['CleanDate', 'TeamNumber']):
+    indices = group.index
+    
+    for i in range(1, len(group)):
+        current_idx = indices[i]
+        previous_idx = indices[i-1]
+        
+        current_start = original.loc[current_idx, 'start_datetime']
+        previous_end = original.loc[previous_idx, 'end_datetime']
+        
+        travel_time = (current_start - previous_end).total_seconds() / 60
+        
+        if travel_time < 0:
+            original.loc[current_idx, 'travel_time_minutes'] = np.nan
+            original_negative_travel_times += 1
+        else:
+            original.loc[current_idx, 'travel_time_minutes'] = travel_time
+
+original = original.drop(['start_datetime', 'end_datetime'], axis=1)
+
+# Original dataset statistics
+print(f"Original dataset records: {len(original)}")
+print(f"Negative travel times found: {original_negative_travel_times}")
+
+# ========== PROCESS OPTIMIZED DATASET ==========
+final = pd.read_csv("/Workspace/Users/harvey.chan@bci.ca/TCA Opt/Input/travel_optimized_schedule_franchise_372_20250801_210849.csv")
+
+# Convert time strings to datetime objects
+final['start_datetime'] = pd.to_datetime(final['start_time'], format='%H:%M')
+final['end_datetime'] = pd.to_datetime(final['end_time'], format='%H:%M')
+
+final = final.sort_values(['day_name', 'team_number', 'start_datetime'])
+
+# Initialize travel_time column
+final['travel_time_minutes'] = np.nan
+final_negative_travel_times = 0
+
+# Calculate travel time for each day_name and team_number group
+for (day, team), group in final.groupby(['day_name', 'team_number']):
+    indices = group.index
+    
+    for i in range(1, len(group)):
+        current_idx = indices[i]
+        previous_idx = indices[i-1]
+        
+        current_start = final.loc[current_idx, 'start_datetime']
+        previous_end = final.loc[previous_idx, 'end_datetime']
+        
+        travel_time = (current_start - previous_end).total_seconds() / 60
+        
+        if travel_time < 0:
+            final.loc[current_idx, 'travel_time_minutes'] = np.nan
+            final_negative_travel_times += 1
+        else:
+            final.loc[current_idx, 'travel_time_minutes'] = travel_time
+
+# Drop temporary columns
+final = final.drop(['start_datetime', 'end_datetime'], axis=1)
+
+print(f"Optimized dataset records: {len(final)}")
+print(f"Negative travel times found: {final_negative_travel_times}")
+
+# ========== ORIGINAL DATASET STATISTICS ==========
+
+original_avg = original['travel_time_minutes'].mean()
+original_total = original['travel_time_minutes'].sum()
+
+print(f"Average travel time: {original_avg:.2f} minutes")
+print(f"Median travel time: {original['travel_time_minutes'].median():.2f} minutes")
+print(f"Total travel time: {original_total:.2f} minutes ({original_total/60:.2f} hours)")
+print(f"Max travel time: {original['travel_time_minutes'].max():.2f} minutes")
+print(f"Min travel time: {original['travel_time_minutes'].min():.2f} minutes")
+
+print("\nOriginal - Travel Time by Day:")
+day_order = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+original_day_stats = {}
+for day in day_order:
+    if day in original['day_name'].values:
+        day_data = original[original['day_name'] == day]['travel_time_minutes']
+        if day_data.notna().sum() > 0:
+            avg = day_data.mean()
+            median = day_data.median()
+            total = day_data.sum()
+            count = day_data.notna().sum()
+            original_day_stats[day] = {'avg': avg, 'median': median, 'total': total, 'count': count}
+            print(f"{day.capitalize():9} - Avg: {avg:6.2f} min, Median: {median:6.2f} min, Total: {total:7.2f} min ({total/60:5.2f} hrs), Segments: {count}")
+
+# ========== OPTIMIZED DATASET STATISTICS ==========
+print("\n4. OPTIMIZED DATASET - TRAVEL TIME STATISTICS")
+print("-"*50)
+
+final_avg = final['travel_time_minutes'].mean()
+final_total = final['travel_time_minutes'].sum()
+
+print(f"Average travel time: {final_avg:.2f} minutes")
+print(f"Median travel time: {final['travel_time_minutes'].median():.2f} minutes")
+print(f"Total travel time: {final_total:.2f} minutes ({final_total/60:.2f} hours)")
+print(f"Max travel time: {final['travel_time_minutes'].max():.2f} minutes")
+print(f"Min travel time: {final['travel_time_minutes'].min():.2f} minutes")
+
+print("\nOptimized - Travel Time by Day:")
+final_day_stats = {}
+for day in day_order:
+    if day in final['day_name'].values:
+        day_data = final[final['day_name'] == day]['travel_time_minutes']
+        if day_data.notna().sum() > 0:
+            avg = day_data.mean()
+            median = day_data.median()
+            total = day_data.sum()
+            count = day_data.notna().sum()
+            final_day_stats[day] = {'avg': avg, 'median': median, 'total': total, 'count': count}
+            print(f"{day.capitalize():9} - Avg: {avg:6.2f} min, Median: {median:6.2f} min, Total: {total:7.2f} min ({total/60:5.2f} hrs), Segments: {count}")
+
+# ========== COMPARISON SUMMARY ==========
+print("\n5. COMPARISON SUMMARY")
+print("="*80)
+
+# Calculate medians
+original_median = original['travel_time_minutes'].median()
+final_median = final['travel_time_minutes'].median()
+
+# Quick comparison table
+print("\nQUICK METRICS COMPARISON:")
+print(f"{'Metric':<20} | {'Original':>12} | {'Optimized':>12} | {'Change':>12} | {'% Change':>10}")
+print("-"*70)
+print(f"{'Average (min)':<20} | {original_avg:>12.2f} | {final_avg:>12.2f} | {original_avg - final_avg:>12.2f} | {((original_avg - final_avg)/original_avg)*100:>9.1f}%")
+print(f"{'Median (min)':<20} | {original_median:>12.2f} | {final_median:>12.2f} | {original_median - final_median:>12.2f} | {((original_median - final_median)/original_median)*100:>9.1f}%")
+print(f"{'Total (min)':<20} | {original_total:>12.2f} | {final_total:>12.2f} | {original_total - final_total:>12.2f} | {((original_total - final_total)/original_total)*100:>9.1f}%")
+print(f"{'Total (hours)':<20} | {original_total/60:>12.2f} | {final_total/60:>12.2f} | {(original_total - final_total)/60:>12.2f} | {((original_total - final_total)/original_total)*100:>9.1f}%")
+
+print("\nOVERALL COMPARISON:")
+print("-"*50)
+
+# Average comparison
+print("AVERAGE Travel Time:")
+print(f"  Original:    {original_avg:8.2f} minutes")
+print(f"  Optimized:   {final_avg:8.2f} minutes")
+print(f"  Improvement: {original_avg - final_avg:8.2f} minutes ({((original_avg - final_avg)/original_avg)*100:6.2f}%)")
+
+# Median comparison
+print("\nMEDIAN Travel Time:")
+print(f"  Original:    {original_median:8.2f} minutes")
+print(f"  Optimized:   {final_median:8.2f} minutes")
+print(f"  Improvement: {original_median - final_median:8.2f} minutes ({((original_median - final_median)/original_median)*100:6.2f}%)")
+
+# Total comparison
+print("\nTOTAL Travel Time:")
+print(f"  Original:    {original_total:10.2f} minutes ({original_total/60:7.2f} hours)")
+print(f"  Optimized:   {final_total:10.2f} minutes ({final_total/60:7.2f} hours)")
+print(f"  Time Saved:  {original_total - final_total:10.2f} minutes ({(original_total - final_total)/60:7.2f} hours)")
+print(f"  Improvement: {((original_total - final_total)/original_total)*100:6.2f}%")
+
+# Calculate day-by-day medians
+print("\n" + "="*80)
+print("DAY-BY-DAY COMPARISON - AVERAGE TRAVEL TIME:")
+print(f"{'Day':9} | {'Original':>12} | {'Optimized':>12} | {'Improvement':>12} | {'% Better':>10}")
+print("-"*70)
+
+for day in day_order:
+    if day in original_day_stats and day in final_day_stats:
+        orig_avg = original_day_stats[day]['avg']
+        opt_avg = final_day_stats[day]['avg']
+        improvement = orig_avg - opt_avg
+        pct_improvement = (improvement / orig_avg) * 100 if orig_avg > 0 else 0
+        print(f"{day.capitalize():9} | {orig_avg:>10.2f} min | {opt_avg:>10.2f} min | {improvement:>10.2f} min | {pct_improvement:>8.2f}%")
+
+# Day-by-day TOTAL comparison
+print("\n" + "="*80)
+print("DAY-BY-DAY COMPARISON - TOTAL TRAVEL TIME:")
+print(f"{'Day':9} | {'Original':>12} | {'Optimized':>12} | {'Time Saved':>12} | {'% Better':>10}")
+print("-"*70)
+
+for day in day_order:
+    if day in original_day_stats and day in final_day_stats:
+        orig_total = original_day_stats[day]['total']
+        opt_total = final_day_stats[day]['total']
+        time_saved = orig_total - opt_total
+        pct_improvement = (time_saved / orig_total) * 100 if orig_total > 0 else 0
+        print(f"{day.capitalize():9} | {orig_total:>10.2f} min | {opt_total:>10.2f} min | {time_saved:>10.2f} min | {pct_improvement:>8.2f}%")
+
+# Day-by-day MEDIAN comparison (using stats from earlier)
+print("\n" + "="*80)
+print("DAY-BY-DAY COMPARISON - MEDIAN TRAVEL TIME:")
+print(f"{'Day':9} | {'Original':>12} | {'Optimized':>12} | {'Improvement':>12} | {'% Better':>10}")
+print("-"*70)
+
+for day in day_order:
+    if day in original_day_stats and day in final_day_stats:
+        orig_median = original_day_stats[day]['median']
+        opt_median = final_day_stats[day]['median']
+        improvement = orig_median - opt_median
+        pct_improvement = (improvement / orig_median) * 100 if orig_median > 0 else 0
+        print(f"{day.capitalize():9} | {orig_median:>10.2f} min | {opt_median:>10.2f} min | {improvement:>10.2f} min | {pct_improvement:>8.2f}%")
+
+# Create comparison DataFrame
+comparison_data = []
+for day in day_order:
+    if day in original_day_stats and day in final_day_stats:
+        orig_stats = original_day_stats[day]
+        final_stats = final_day_stats[day]
+        
+        comparison_data.append({
+            'Day': day.capitalize(),
+            'Original_Avg_Minutes': orig_stats['avg'],
+            'Optimized_Avg_Minutes': final_stats['avg'],
+            'Avg_Improvement_Minutes': orig_stats['avg'] - final_stats['avg'],
+            'Avg_Improvement_Percent': ((orig_stats['avg'] - final_stats['avg']) / orig_stats['avg']) * 100,
+            'Original_Total_Minutes': orig_stats['total'],
+            'Optimized_Total_Minutes': final_stats['total'],
+            'Total_Time_Saved_Minutes': orig_stats['total'] - final_stats['total'],
+            'Total_Improvement_Percent': ((orig_stats['total'] - final_stats['total']) / orig_stats['total']) * 100,
+            'Original_Median_Minutes': orig_stats['median'],
+            'Optimized_Median_Minutes': final_stats['median'],
+            'Median_Improvement_Minutes': orig_stats['median'] - final_stats['median'],
+            'Median_Improvement_Percent': ((orig_stats['median'] - final_stats['median']) / orig_stats['median']) * 100
+        })
+
+comparison_df = pd.DataFrame(comparison_data)
+
+print("\n6. SUMMARY RECOMMENDATIONS")
+print("-"*50)
+
+# Analyze overall performance
+improvements = {
+    'Average': original_avg - final_avg,
+    'Median': original_median - final_median,
+    'Total': original_total - final_total
+}
+
+positive_improvements = sum(1 for v in improvements.values() if v > 0)
+
+if positive_improvements >= 2:
+    print("✓ The optimized schedule shows improvement in most metrics:")
+    if improvements['Average'] > 0:
+        print(f"  - Average travel time reduced by {((original_avg - final_avg)/original_avg)*100:.1f}%")
+    if improvements['Median'] > 0:
+        print(f"  - Median travel time reduced by {((original_median - final_median)/original_median)*100:.1f}%")
+    if improvements['Total'] > 0:
+        print(f"  - Total travel time reduced by {(original_total - final_total)/60:.1f} hours ({((original_total - final_total)/original_total)*100:.1f}%)")
+else:
+    print("⚠ The optimized schedule shows mixed results:")
+    for metric, improvement in improvements.items():
+        if improvement > 0:
+            print(f"  ✓ {metric} improved")
+        else:
+            print(f"  ✗ {metric} increased")
+
+# Find best and worst days
+if len(comparison_df) > 0:
+    print("\nDay-by-day insights:")
+    
+    # Best average improvement
+    best_avg_day = comparison_df.loc[comparison_df['Avg_Improvement_Percent'].idxmax()]
+    print(f"  - Best average improvement: {best_avg_day['Day']} ({best_avg_day['Avg_Improvement_Percent']:.1f}%)")
+    
+    # Best median improvement
+    best_median_day = comparison_df.loc[comparison_df['Median_Improvement_Percent'].idxmax()]
+    print(f"  - Best median improvement: {best_median_day['Day']} ({best_median_day['Median_Improvement_Percent']:.1f}%)")
+    
+    # Best total time saved
+    best_total_day = comparison_df.loc[comparison_df['Total_Time_Saved_Minutes'].idxmax()]
+    print(f"  - Most time saved: {best_total_day['Day']} ({best_total_day['Total_Time_Saved_Minutes']:.0f} minutes)")
+    
+    # Days that got worse
+    worse_days = comparison_df[comparison_df['Avg_Improvement_Percent'] < 0]
+    if len(worse_days) > 0:
+        print(f"  - Days with increased average travel time: {', '.join(worse_days['Day'].tolist())}")
+    
+    # Check consistency across metrics
+    consistent_improvements = comparison_df[
+        (comparison_df['Avg_Improvement_Percent'] > 0) & 
+        (comparison_df['Median_Improvement_Percent'] > 0) & 
+        (comparison_df['Total_Improvement_Percent'] > 0)
+    ]
+    if len(consistent_improvements) > 0:
+        print(f"  - Days improved across all metrics: {', '.join(consistent_improvements['Day'].tolist())}")
+
+# Save comparison results
+print("\n7. SAVING RESULTS")
+print("-"*50)
+
+# Create a more detailed summary table
+summary_table = pd.DataFrame({
+    'Metric': ['Average (minutes)', 'Median (minutes)', 'Total (minutes)', 'Total (hours)'],
+    'Original': [original_avg, original_median, original_total, original_total/60],
+    'Optimized': [final_avg, final_median, final_total, final_total/60],
+    'Difference': [original_avg - final_avg, original_median - final_median, 
+                   original_total - final_total, (original_total - final_total)/60],
+    'Improvement %': [
+        ((original_avg - final_avg)/original_avg)*100,
+        ((original_median - final_median)/original_median)*100,
+        ((original_total - final_total)/original_total)*100,
+        ((original_total - final_total)/original_total)*100
+    ]
+})
+
+print("\nOVERALL METRICS SUMMARY TABLE:")
+print(summary_table.round(2).to_string(index=False))
+
+# Save all results
+comparison_df.to_csv("/Workspace/Users/harvey.chan@bci.ca/TCA Opt/Output/travel_time_comparison_detailed.csv", index=False)
+summary_table.to_csv("/Workspace/Users/harvey.chan@bci.ca/TCA Opt/Output/travel_time_summary.csv", index=False)
+print("\n✓ Detailed comparison saved to: travel_time_comparison_detailed.csv")
+print("✓ Summary metrics saved to: travel_time_summary.csv")
+
+# Save detailed datasets with travel times
+original.to_csv("/Workspace/Users/harvey.chan@bci.ca/TCA Opt/Output/original_with_travel_times.csv", index=False)
+final.to_csv("/Workspace/Users/harvey.chan@bci.ca/TCA Opt/Output/optimized_with_travel_times.csv", index=False)
+print("✓ Original dataset with travel times saved")
+print("✓ Optimized dataset with travel times saved")
+
+print("\n" + "="*80)
+print("ANALYSIS COMPLETE")
+print("="*80)

@@ -1,0 +1,96 @@
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 1, 5 customers, type: optimized Object
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:41 Creating map for Team 1 with 5 customers
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 1, 5 customers, type: optimized Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 1: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 2: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 3: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 4: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 5: Object
+individual-team-map.tsx:156 Map created successfully for Team 1
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 1, 5 customers, type: optimized Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 3, 4 customers, type: original Object
+individual-team-map.tsx:41 Creating map for Team 3 with 4 customers
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 3, 4 customers, type: original Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 1: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 2: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 3: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 4: Object
+individual-team-map.tsx:156 Map created successfully for Team 3
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 3, 4 customers, type: original Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 7, 5 customers, type: original Object
+individual-team-map.tsx:41 Creating map for Team 7 with 5 customers
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 7, 5 customers, type: original Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 1: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 2: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 3: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 4: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 5: Object
+individual-team-map.tsx:156 Map created successfully for Team 7
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 7, 0 customers, type: original Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 7, 5 customers, type: original Object
+individual-team-map.tsx:41 Creating map for Team 7 with 5 customers
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 7, 5 customers, type: original Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 1: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 2: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 3: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 4: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 5: Object
+individual-team-map.tsx:156 Map created successfully for Team 7
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 7, 5 customers, type: original Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 2, 4 customers, type: original Object
+individual-team-map.tsx:41 Creating map for Team 2 with 4 customers
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 2, 4 customers, type: original Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 1: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 2: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 3: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 4: Object
+individual-team-map.tsx:156 Map created successfully for Team 2
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 2, 4 customers, type: original Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 2, 4 customers, type: original Object
+individual-team-map.tsx:41 Creating map for Team 2 with 4 customers
+route-map.tsx:39 RouteMap data flow: Object
+individual-team-map.tsx:15 IndividualTeamMap rendering: Team 2, 4 customers, type: original Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 1: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 2: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 3: Object
+individual-team-map.tsx:86 IndividualTeamMap Customer 4: Object
+individual-team-map.tsx:156 Map created successfully for Team 2

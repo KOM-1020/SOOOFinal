@@ -1,0 +1,96 @@
+[stage-0  1/15] FROM ghcr.io/railwayapp/nixpacks:ubuntu-1745885067@sha256:d45c89d80e13d7ad0fd555b5130f22a866d9dd10e861f589932303ef2314c7de  ✔ 9 ms
+
+[internal] load build context  ✔ 39 ms
+
+[stage-0  2/15] WORKDIR /app/  ✔ 0 ms – CACHED
+
+[stage-0  3/15] COPY .nixpacks/nixpkgs-ba913eda2df8eb72147259189d55932012df6301.nix .nixpacks/nixpkgs-ba913eda2df8eb72147259189d55932012df6301.nix  ✔ 0 ms – CACHED
+
+[stage-0  4/15] RUN nix-env -if .nixpacks/nixpkgs-ba913eda2df8eb72147259189d55932012df6301.nix && nix-collect-garbage -d  ✔ 0 ms – CACHED
+
+[stage-0  5/15] COPY .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix  ✔ 0 ms – CACHED
+
+[stage-0  6/15] RUN nix-env -if .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix && nix-collect-garbage -d  ✔ 0 ms – CACHED
+
+[stage-0  7/15] COPY .nixpacks/assets /assets/  ✔ 0 ms – CACHED
+
+[stage-0  8/15] COPY . /app/.  ✔ 0 ms – CACHED
+
+[stage-0  9/15] RUN  caddy fmt --overwrite /assets/Caddyfile  ✔ 0 ms – CACHED
+
+[stage-0 10/15] COPY . /app/.  ✔ 0 ms – CACHED
+
+[stage-0 11/15] RUN --mount=type=cache,id=s/14589f47-b464-43f6-bdb4-ab2e4a54afc3-/root/npm,target=/root/.npm npm ci  ✔ 0 ms – CACHED
+
+[stage-0 12/15] COPY . /app/.  ✔ 0 ms – CACHED
+
+[stage-0 13/15] RUN --mount=type=cache,id=s/14589f47-b464-43f6-bdb4-ab2e4a54afc3-node_modules/cache,target=/app/node_modules/.cache npm run build  ✔ 0 ms – CACHED
+
+[stage-0 14/15] RUN printf '\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile  ✔ 0 ms – CACHED
+
+[stage-0 15/15] COPY . /app  ✔ 0 ms – CACHED
+
+exporting to docker image format
+
+exporting to image
+
+[auth] sharing credentials for production-us-west2.railway-registry.com
+
+[auth] sharing credentials for production-us-west2.railway-registry.com  ✔ 0 ms
+
+importing to docker
+
+importing to docker  ✔ 11 sec
+
+=== Successfully Built! ===
+
+Run:
+
+docker run -it production-us-west2.railway-registry.com/14589f47-b464-43f6-bdb4-ab2e4a54afc3:499f9112-6c74-4e64-99f0-87ce5802a71e
+
+Build time: 16.56 seconds
+
+ 
+
+====================
+
+Starting Healthcheck
+
+====================
+
+
+Path: /
+
+Retry window: 5m0s
+
+ 
+
+Attempt #1 failed with service unavailable. Continuing to retry for 4m49s
+
+Attempt #2 failed with service unavailable. Continuing to retry for 4m38s
+
+Attempt #3 failed with service unavailable. Continuing to retry for 4m26s
+
+Attempt #4 failed with service unavailable. Continuing to retry for 4m12s
+
+Attempt #5 failed with service unavailable. Continuing to retry for 3m54s
+
+Attempt #6 failed with service unavailable. Continuing to retry for 3m28s
+
+Attempt #7 failed with service unavailable. Continuing to retry for 2m48s
+
+Attempt #8 failed with service unavailable. Continuing to retry for 2m18s
+
+Attempt #9 failed with service unavailable. Continuing to retry for 1m48s
+
+Attempt #10 failed with service unavailable. Continuing to retry for 1m18s
+
+Attempt #11 failed with service unavailable. Continuing to retry for 48s
+
+Attempt #12 failed with service unavailable. Continuing to retry for 18s
+
+ 
+
+1/1 replicas never became healthy!
+
+Healthcheck failed!

@@ -1,0 +1,37 @@
+I have created an TCA Schedule Optimizer.
+
+And I have to make an app which can deploy on databrics app or replit to present the result, compaing the unoptimized vs optimized schedule for FRANCHISE 372 2025-07-07 - 2025-07-13.
+
+For the configuration setting, options to FRANCHISE = 372, and date range start date = 2025-07-07, end date = 2025-07-13.
+
+Two sections required:
+Stat result present. Read the READMe to know about the good statistics result for unoptimized vs optimized schedule.
+
+unoptimized vs optimized schedule travel time comparison for each day (monday to sunday)
+
+The time shift distribution, since they shifted some date to process cleans, need a distribution of date shift (I believe you have to use the custom id in the optimized schedule to find their nearest order wothin that day in the orignial schedule, to see the time shift
+
+The processed clean per day (slots) coparison unoptimized vs optimized
+
+and more, ...
+
+The contrainst side
+Which constraints do us respect, unoptimized vs optimized schedule
+should be a checkmark, etc
+
+In the second section, it separated into four sections. Left side: two calender with FRANCHISE 372 2025-07-07 - 2025-07-13, with their schedules list, the top calender is optimized schedule, the buttom calender is unoptimized schedule, with details of team members, the contrainst they successfully obayed
+
+On the right side are two maps, with the route drawed, from one single day, start from the FRANCHISE address and label as 1, to the first customer 2, and 3, and so on
+
+Please reference the scrrenshot for the style
+
+The unoptimized data are
+
+franchise_info.csv - Franchise configuration
+master_cleans.csv - Customer service durations
+customer_profiles.csv - Customer availability constraints
+team_availability.csv - Team operational status
+The optimized schedule are
+travel_optimized_schedule_franchise_372_20250801_210849
+
+The optimizer.py is also provided, theis help you know how the optimizer will work, but you don't have to run it. Please add the description how the algorithm work as well

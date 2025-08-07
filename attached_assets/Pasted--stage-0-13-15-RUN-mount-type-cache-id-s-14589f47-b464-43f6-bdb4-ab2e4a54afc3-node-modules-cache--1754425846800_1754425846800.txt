@@ -1,0 +1,103 @@
+[stage-0 13/15] RUN --mount=type=cache,id=s/14589f47-b464-43f6-bdb4-ab2e4a54afc3-node_modules/cache,target=/app/node_modules/.cache npm run build
+
+npm warn config production Use `--omit=dev` instead.
+
+
+> rest-express@1.0.0 build
+> vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+
+
+vite v5.4.19 building for production...
+
+transforming...
+
+Browserslist: browsers data (caniuse-lite) is 10 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+✓ 2520 modules transformed.
+
+rendering chunks...
+
+computing gzip size...
+
+../dist/public/index.html                        0.75 kB │ gzip:   0.44 kB
+../dist/public/assets/index-BEs0Xq7v.css        62.85 kB │ gzip:  11.11 kB
+
+../dist/public/assets/leaflet-src-2NEsvKK0.js  149.98 kB │ gzip:  43.48 kB
+
+../dist/public/assets/index-BNVUwek5.js        744.56 kB │ gzip: 218.31 kB
+
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+✓ built in 7.75s
+
+
+  dist/index.js  45.1kb
+
+⚡ Done in 7ms
+
+[stage-0 13/15] RUN --mount=type=cache,id=s/14589f47-b464-43f6-bdb4-ab2e4a54afc3-node_modules/cache,target=/app/node_modules/.cache npm run build  ✔ 8 sec
+
+[stage-0 14/15] RUN printf '\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile
+
+[stage-0 14/15] RUN printf '\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile  ✔ 162 ms
+
+[stage-0 15/15] COPY . /app
+
+[stage-0 15/15] COPY . /app  ✔ 33 ms
+
+exporting to docker image format
+
+exporting to image
+
+[auth] sharing credentials for production-us-west2.railway-registry.com
+
+[auth] sharing credentials for production-us-west2.railway-registry.com  ✔ 0 ms
+
+importing to docker
+
+importing to docker  ✔ 12 sec
+
+=== Successfully Built! ===
+
+Run:
+
+docker run -it production-us-west2.railway-registry.com/14589f47-b464-43f6-bdb4-ab2e4a54afc3:762a34ad-6ddb-4b55-bcef-166738d626f3
+
+Build time: 47.96 seconds
+
+ 
+
+====================
+
+Starting Healthcheck
+
+====================
+
+
+Path: /api/dashboard-stats
+
+Retry window: 5m0s
+
+ 
+
+Attempt #1 failed with status 404. Continuing to retry for 4m59s
+
+Attempt #2 failed with status 404. Continuing to retry for 4m58s
+
+Attempt #3 failed with status 404. Continuing to retry for 4m56s
+
+Attempt #4 failed with status 404. Continuing to retry for 4m52s
+
+Attempt #5 failed with status 404. Continuing to retry for 4m44s
+
+Attempt #6 failed with status 404. Continuing to retry for 4m28s
+
+Attempt #7 failed with status 404. Continuing to retry for 3m58s
+
+Attempt #8 failed with status 404. Continuing to retry for 3m28s

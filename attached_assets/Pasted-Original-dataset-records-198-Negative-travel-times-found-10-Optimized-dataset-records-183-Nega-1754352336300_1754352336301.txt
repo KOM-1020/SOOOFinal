@@ -1,0 +1,124 @@
+Original dataset records: 198
+Negative travel times found: 10
+Optimized dataset records: 183
+Negative travel times found: 1
+Average travel time: 22.59 minutes
+Median travel time: 20.00 minutes
+Total travel time: 3027.00 minutes (50.45 hours)
+Max travel time: 73.00 minutes
+Min travel time: 6.00 minutes
+
+Original - Travel Time by Day:
+Monday    - Avg:  23.81 min, Median:  22.00 min, Total:  643.00 min (10.72 hrs), Segments: 27
+Tuesday   - Avg:  28.79 min, Median:  27.00 min, Total:  835.00 min (13.92 hrs), Segments: 29
+Wednesday - Avg:  19.36 min, Median:  20.00 min, Total:  484.00 min ( 8.07 hrs), Segments: 25
+Thursday  - Avg:  20.17 min, Median:  20.00 min, Total:  585.00 min ( 9.75 hrs), Segments: 29
+Friday    - Avg:  20.00 min, Median:  20.00 min, Total:  480.00 min ( 8.00 hrs), Segments: 24
+
+4. OPTIMIZED DATASET - TRAVEL TIME STATISTICS
+--------------------------------------------------
+Average travel time: 23.33 minutes
+Median travel time: 13.50 minutes
+Total travel time: 2286.00 minutes (38.10 hours)
+Max travel time: 88.00 minutes
+Min travel time: 0.00 minutes
+
+Optimized - Travel Time by Day:
+Monday    - Avg:  27.11 min, Median:  12.50 min, Total:  488.00 min ( 8.13 hrs), Segments: 18
+Tuesday   - Avg:  12.67 min, Median:  15.00 min, Total:   38.00 min ( 0.63 hrs), Segments: 3
+Wednesday - Avg:  42.40 min, Median:  60.00 min, Total:  212.00 min ( 3.53 hrs), Segments: 5
+Thursday  - Avg:  19.24 min, Median:   9.00 min, Total:  327.00 min ( 5.45 hrs), Segments: 17
+Friday    - Avg:  32.67 min, Median:  12.00 min, Total:   98.00 min ( 1.63 hrs), Segments: 3
+Saturday  - Avg:  22.47 min, Median:  15.00 min, Total:  966.00 min (16.10 hrs), Segments: 43
+Sunday    - Avg:  17.44 min, Median:   8.00 min, Total:  157.00 min ( 2.62 hrs), Segments: 9
+
+5. COMPARISON SUMMARY
+================================================================================
+
+QUICK METRICS COMPARISON:
+Metric               |     Original |    Optimized |       Change |   % Change
+----------------------------------------------------------------------
+Average (min)        |        22.59 |        23.33 |        -0.74 |      -3.3%
+Median (min)         |        20.00 |        13.50 |         6.50 |      32.5%
+Total (min)          |      3027.00 |      2286.00 |       741.00 |      24.5%
+Total (hours)        |        50.45 |        38.10 |        12.35 |      24.5%
+
+OVERALL COMPARISON:
+--------------------------------------------------
+AVERAGE Travel Time:
+  Original:       22.59 minutes
+  Optimized:      23.33 minutes
+  Improvement:    -0.74 minutes ( -3.26%)
+
+MEDIAN Travel Time:
+  Original:       20.00 minutes
+  Optimized:      13.50 minutes
+  Improvement:     6.50 minutes ( 32.50%)
+
+TOTAL Travel Time:
+  Original:       3027.00 minutes (  50.45 hours)
+  Optimized:      2286.00 minutes (  38.10 hours)
+  Time Saved:      741.00 minutes (  12.35 hours)
+  Improvement:  24.48%
+
+================================================================================
+DAY-BY-DAY COMPARISON - AVERAGE TRAVEL TIME:
+Day       |     Original |    Optimized |  Improvement |   % Better
+----------------------------------------------------------------------
+Monday    |      23.81 min |      27.11 min |      -3.30 min |   -13.84%
+Tuesday   |      28.79 min |      12.67 min |      16.13 min |    56.01%
+Wednesday |      19.36 min |      42.40 min |     -23.04 min |  -119.01%
+Thursday  |      20.17 min |      19.24 min |       0.94 min |     4.65%
+Friday    |      20.00 min |      32.67 min |     -12.67 min |   -63.33%
+
+================================================================================
+DAY-BY-DAY COMPARISON - TOTAL TRAVEL TIME:
+Day       |     Original |    Optimized |   Time Saved |   % Better
+----------------------------------------------------------------------
+Monday    |     643.00 min |     488.00 min |     155.00 min |    24.11%
+Tuesday   |     835.00 min |      38.00 min |     797.00 min |    95.45%
+Wednesday |     484.00 min |     212.00 min |     272.00 min |    56.20%
+Thursday  |     585.00 min |     327.00 min |     258.00 min |    44.10%
+Friday    |     480.00 min |      98.00 min |     382.00 min |    79.58%
+
+================================================================================
+DAY-BY-DAY COMPARISON - MEDIAN TRAVEL TIME:
+Day       |     Original |    Optimized |  Improvement |   % Better
+----------------------------------------------------------------------
+Monday    |      22.00 min |      12.50 min |       9.50 min |    43.18%
+Tuesday   |      27.00 min |      15.00 min |      12.00 min |    44.44%
+Wednesday |      20.00 min |      60.00 min |     -40.00 min |  -200.00%
+Thursday  |      20.00 min |       9.00 min |      11.00 min |    55.00%
+Friday    |      20.00 min |      12.00 min |       8.00 min |    40.00%
+
+6. SUMMARY RECOMMENDATIONS
+--------------------------------------------------
+✓ The optimized schedule shows improvement in most metrics:
+  - Median travel time reduced by 32.5%
+  - Total travel time reduced by 12.3 hours (24.5%)
+
+Day-by-day insights:
+  - Best average improvement: Tuesday (56.0%)
+  - Best median improvement: Thursday (55.0%)
+  - Most time saved: Tuesday (797 minutes)
+  - Days with increased average travel time: Monday, Wednesday, Friday
+  - Days improved across all metrics: Tuesday, Thursday
+
+7. SAVING RESULTS
+--------------------------------------------------
+
+OVERALL METRICS SUMMARY TABLE:
+           Metric  Original  Optimized  Difference  Improvement %
+Average (minutes)     22.59      23.33       -0.74          -3.26
+ Median (minutes)     20.00      13.50        6.50          32.50
+  Total (minutes)   3027.00    2286.00      741.00          24.48
+    Total (hours)     50.45      38.10       12.35          24.48
+
+✓ Detailed comparison saved to: travel_time_comparison_detailed.csv
+✓ Summary metrics saved to: travel_time_summary.csv
+✓ Original dataset with travel times saved
+✓ Optimized dataset with travel times saved
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
